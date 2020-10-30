@@ -40,7 +40,7 @@ Modelo docker compose contendo PHP com Xdebug, nginx e mysql funcionando integra
 
 ## DOCKER
 
-Para rodar o docker-compose, primeiro faça a [instalação do docker](www.docker.com/products/docker-desktop)
+Para rodar o docker-compose, primeiro faça a [instalação do docker](www.docker.com/products/docker-desktop) <br />
 Pelo terminal acesse a pasta onde contem o arquivo docker-compose.yml, alguns comandos:
 
 - docker-compose up
@@ -60,7 +60,7 @@ somente constroi as imagens .dockerfile
 
 ## WEB
 
-No host para testar acessar:__
+No host para testar acessar: <br />
 [locahost:8080](http://localhost:8080)
 
 ## XDEBUG
