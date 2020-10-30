@@ -60,8 +60,8 @@ somente constroi as imagens .dockerfile
 
 ## WEB
 
-No host para testar acessar:
-[locahost:8080](locahost:8080)
+No host para testar acessar:__
+[locahost:8080](http://localhost:8080)
 
 ## XDEBUG
 
