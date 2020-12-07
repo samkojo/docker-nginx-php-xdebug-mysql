@@ -14,10 +14,14 @@ RUN apt-get update && apt-get install -y \
         libonig-dev \
         graphviz \
         zip      \
-    && docker-php-ext-configure gd \
-    && docker-php-ext-install -j$(nproc) gd \
+    # && docker-php-ext-configure gd \
+    # && docker-php-ext-install -j$(nproc) gd \
     && docker-php-ext-install zip \
     && docker-php-source delete
+
+#GD
+RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
+  && docker-php-ext-install -j "$(nproc)" gd
 
 # Instalação e configuração do XDebug
 RUN yes | pecl install xdebug && docker-php-ext-enable xdebug
