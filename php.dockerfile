@@ -24,7 +24,7 @@ RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
   && docker-php-ext-install -j "$(nproc)" gd
 
 # Instalação e configuração do XDebug
-RUN yes | pecl install xdebug && docker-php-ext-enable xdebug
+RUN yes | pecl install xdebug-2.9.8 && docker-php-ext-enable xdebug
 
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
